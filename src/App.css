@@ -1,38 +1,475 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Rubik;
+  src: url(./fonts/Rubik-Medium.ttf );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Rubik-Regular;
+  src: url(./fonts/Rubik-Regular.ttf );
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Regular-slnt=0.ttf );
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: Inter-Medium;
+  src: url(./fonts/Inter-Medium-slnt=0.ttf );
+}
+
+.body {
+  /* Canvas */
+  position: absolute;
+  width: 940px;
+  height: 1329.85px;
+  left: 250px;
+  top: 172px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.block-wrapper {
+  /* Group 233 */
+  position: absolute;
+  width: 480px;
+  height: 162px;
+  left: 44px;
+  top: 255px;
+}
+
+.header {
+  /* Group 232 */
+  position: absolute;
+  width: 450px;
+  height: 36px;
+  left: 16px;
+  /* left: 75px; */
+  /* top: 255px; */
+}
+
+.header-title {
+  /* EXPERIENCE */
+  position: absolute;
+  width: 173px;
+  height: 33px;
+  left: 16px;
+  /* left: 75px; */
+  /* top: 255px; */
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+
+  /* Enhancv Headings */
+  color: #2D3639;
+}
+
+.header-rect {
+  /* Rectangle 239 */
+  position: absolute;
+  width: 450px;
+  height: 3px;
+  left: 16px;
+  top: 33px;
+  /* left: 75px; */
+  /* top: 288px; */
+
+  /* Enhancv Headings */
+  background: #2D3639;
+}
+
+.content {
+  /* Frame 234 */
+  /* Auto Layout */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  padding: 15px 0px 0px 15px;
+
+  position: absolute;
+  width: 480px;
+  height: 126px;
+  top: 36px;
+  left: 1px;
+  top: 37px;
+  /* left: 59px; */
+  /* top: 291px; */
+
+  background: #FFFFFF;
 }
 
-.App-link {
-  color: #61dafb;
+.content-inner {
+  /* Frame 231 */
+  /* Auto Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 450px;
+  height: 96px;
+  left: 15px;
+  top: 15px;
+
+  opacity: 0.5;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-title {
+  /* Title */
+  position: static;
+  width: 45px;
+  height: 26px;
+  left: 0px;
+  top: 0px;
+
+  font-family: Rubik-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height, or 118% */
+
+  /* Enhancv Headings */
+  color: #2D3639;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: flex-start;
+  flex-grow: 0;
+  /* margin: 4px 0px 4px 0px; */
 }
+
+.content-meta {
+  /* Group 187 */
+  position: static;
+  width: 196px;
+  height: 42px;
+  left: 0px;
+  top: 30px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  align-self: flex-start;
+  flex-grow: 0;
+  margin: 3px 0px 4px 0px;
+}
+
+.content-meta-inner {
+  /* Frame 231 */
+  /* Auto Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 196px;
+  height: 42px;
+  /* left: 0px;
+  top: 30px; */
+}
+
+.content-meta-title {
+  /* Company Name */
+  position: static;
+  width: 121px;
+  height: 22px;
+  left: 0px;
+  top: 0px;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 137% */
+
+  /* Enhancv Context Info */
+  color: #3F9CDC;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: flex-start;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.location-period-wrapper {
+  /* Frame 231 */
+  /* Auto Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 196px;
+  height: 20px;
+  left: 0px;
+  top: 22px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.period-wrapper {
+  /* Editor/Resume/Components/Stamps/Half */
+  /* Auto Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 87px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 10px 0px 0px;
+}
+
+.period-span {
+  /* Date period */
+  position: static;
+  width: 67px;
+  height: 20px;
+  left: 20px;
+  top: 0px;
+
+  font-family: Inter-Medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  /* Enhancv Paragraphs */
+  color: #384347;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 6px 0px 0px;
+}
+
+.period-vector-wrapper {
+  /* Icons/Filled/Calendar */
+  position: static;
+  width: 14px;
+  height: 12px;
+  left: 0px;
+  top: 3px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 6px 0px 0px;
+}
+
+.period-vector-inner-wrapper {
+  /* Group */
+  position: absolute;
+  /* left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 10%; */
+}
+
+.period-vector {
+  /* Vector */
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 10%;
+  padding-left: 1px;
+
+  /* Enhancv Context Info */
+  /* background: #3F9CDC; */
+}
+
+.location-wrapper {
+  /* Editor/Resume/Components/Stamps/Half */
+  /* Auto Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 99px;
+  height: 20px;
+  left: 97px;
+  top: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 10px 0px 0px;
+}
+
+.location-name {
+  /* New York, NY */
+  position: static;
+  width: 79px;
+  height: 20px;
+  left: 20px;
+  top: 0px;
+
+  font-family: Inter-Medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  /* Enhancv Paragraphs */
+  color: #384347;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 6px 0px 0px;
+}
+
+.location-vector-wrapper {
+  /* Icons/Line/Location */
+  position: static;
+  width: 14px;
+  height: 14px;
+  left: 0px;
+  top: 3px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 6px 0px 0px;
+}
+
+.location-vector-inner-wrapper {
+  /* Group */
+  position: absolute;
+  left: 31.3%;
+  right: 23.75%;
+  top: 42%;
+  bottom: 0%;
+  /* left: 23.75%;
+  right: 23.75%;
+  top: 15%;
+  bottom: 15%; */
+}
+
+.location-pin-vector {
+  /* Vector */
+  position: absolute;
+  left: 42.84%;
+  right: 42.84%;
+  top: 34.31%;
+  bottom: 51.21%;
+
+  /* Enhancv Context Info */
+  /* border: 2px solid #3F9CDC; */
+}
+
+.location-circle-vector {
+  /* Vector */
+  position: absolute;
+  left: 44.7%;
+  right: 23.75%;
+  top: 41%;
+  bottom: 15%;
+  /* left: 23.75%;
+  right: 23.75%;
+  top: 15%;
+  bottom: 15%; */
+
+  /* Enhancv Context Info */
+  /* border: 2px solid #3F9CDC; */
+}
+
+.content-description-wrapper {
+  /* Frame 188 */
+  /* Auto Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 450px;
+  height: 20px;
+  left: 0px;
+  top: 76px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 2;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 4px;
+}
+
+.content-description-title {
+  /* Company Description */
+  position: static;
+  width: 450px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+
+  font-family: Inter-Medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height, or 154% */
+
+
+  /* Enhancv Paragraphs */
+  color: #384347;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  align-self: flex-start;
+  flex-grow: 0;
+  /* margin: 0px 4px; */
+}
+
+
+
