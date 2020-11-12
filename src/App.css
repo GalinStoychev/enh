@@ -76,6 +76,10 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
+.white-backgroud {
+  background: #FFFFFF;
+}
+
 .no-focus:focus {
   outline: none;
 }
@@ -121,7 +125,7 @@
   /* left: 59px; */
   /* top: 291px; */
 
-  background: #FFFFFF;
+  /* background: #FFFFFF; */
   border-radius: 8px;
 }
 
@@ -504,8 +508,8 @@
   position: absolute;
   width: 163px;
   height: 38px;
-  left: 175px;
-  top: 17px;
+  left: 158px;
+  top: -20px;
 
   background: #E0E0E0;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
