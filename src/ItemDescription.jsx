@@ -3,10 +3,12 @@ import ContentEditable from "react-contenteditable";
 import ContentAnalysisService from "./services/content-analysis";
 
 import { Suggestions } from "./Suggestions"
+import { SuggestionPopUp } from './SuggestionPopUp';
 
 export const ItemDescription = ({ itemDescription, onChange }) => {
   const [description, setDescription] = useState(itemDescription)
   const [time, setTime] = useState(null)
+  const [suggestionMessage, setSuggestionMessage] = useState('')
   
   // must save suggestions both ways because react-contenteditable doesn't work well with hooks
   const [suggestions, setSuggestions] = useState([])
@@ -22,9 +24,9 @@ export const ItemDescription = ({ itemDescription, onChange }) => {
   const checkForHover = useCallback((e) => {
     updatedSuggestions.current.find(suggestion => {
       const element = document.getElementById(suggestion.id)
-        if (element && isOverlap(element, e)) {
+      if (element && isOverlap(element, e)) {
         element.classList.add('hovered-highlighted-text')
-        // add pop up
+        setSuggestionMessage(suggestion.message)
         return true
       }
     })
@@ -35,6 +37,7 @@ export const ItemDescription = ({ itemDescription, onChange }) => {
       const element = document.getElementById(suggestion.id)
       if (element) {
         element.classList.remove('hovered-highlighted-text')
+        setSuggestionMessage(false)
       }
     })
   }, [updatedSuggestions])
@@ -48,18 +51,20 @@ export const ItemDescription = ({ itemDescription, onChange }) => {
   return (
     <div className='content-description-wrapper'>
       <ContentEditable
-        className='content-description-title no-focus'
+        className='content-description-title content-description-title-top no-focus'
         html={ description }
         disabled={ false }
         onChange={ handleDescriptionChange }
         onMouseEnter={ checkForHover }
-        onMouseLeave={ removeHoveredSuggestionColor }
+        onMouseOut={ removeHoveredSuggestionColor }
       />
 
       { suggestions.length > 0
         ? <Suggestions suggestions={ suggestions } text={ description } />
         : ''
       }
+
+      { suggestionMessage ? <SuggestionPopUp message={ suggestionMessage }/> : '' }
     </div>
   )
 
@@ -67,7 +72,7 @@ export const ItemDescription = ({ itemDescription, onChange }) => {
     if (time) { clearTimeout(time) }
     let newTimeout = setTimeout(function() {
       const newSuggestions = new ContentAnalysisService(text).call()
-      newSuggestions.forEach((suggestion, index) => suggestion.id = index)
+      newSuggestions.forEach((suggestion) => suggestion.id = Math.random(100))
       updatedSuggestions.current = newSuggestions
       setSuggestions(newSuggestions)
     }, 1000);
