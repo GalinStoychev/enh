@@ -11,6 +11,7 @@ export const ItemDescription = ({ itemDescription, onChange }) => {
   const [suggestionMessage, setSuggestionMessage] = useState('')
   
   // must save suggestions both ways because react-contenteditable doesn't work well with hooks
+  // and updatedSuggestions doesn't update on rerender (probably there is a better workaround)
   const [suggestions, setSuggestions] = useState([])
   const updatedSuggestions = useRef([]);
 
@@ -20,6 +21,14 @@ export const ItemDescription = ({ itemDescription, onChange }) => {
       setNewSuggestions(description)
     }
   }, [description]);
+
+  const handleDescriptionChange = (e) => {
+    // &nbsp; mess up with String.substring
+    // it is a quick fix and can be handle better
+    const value = e.target.value.replace(/&nbsp;/g, " ")
+    onChange(value)
+    setDescription(value)
+  }
 
   const checkForHover = useCallback((e) => {
     updatedSuggestions.current.find(suggestion => {
@@ -41,12 +50,6 @@ export const ItemDescription = ({ itemDescription, onChange }) => {
       }
     })
   }, [updatedSuggestions])
-
-  const handleDescriptionChange = (e) => {
-    const value = e.target.value.replace(/&nbsp;/g, " ")
-    onChange(value)
-    setDescription(value)
-  }
 
   return (
     <div className='content-description-wrapper'>
