@@ -1,9 +1,10 @@
 import React, { useState, useCallback } from 'react';
 import './App.css';
+import ContentEditable from "react-contenteditable";
+import ItemRecord from "./models/item-record";
+
 import { Item } from './Item';
 import OutsideAlerter from "./OutsideAlerter";
-import ItemRecord from "./models/item-record";
-import ContentEditable from "react-contenteditable";
 
 const defaultItem = new ItemRecord()
 
@@ -43,13 +44,13 @@ export const App = () => {
           <div className='content-wrapper'>
             {
               items.map((item) =>
-              <Item
-                key={ item.id }
-                itemData={ item }
-                addNewItem={ addNewItem }
-                deleteItem={ deleteItem }
-                onItemClicked={ () => setBlockFocused(true) }
-              />
+                <Item
+                  key={ item.id }
+                  itemData={ item }
+                  addNewItem={ addNewItem }
+                  deleteItem={ deleteItem }
+                  onItemClicked={ () => setBlockFocused(true) }
+                />
               )
             }
           </div>
