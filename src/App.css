@@ -19,7 +19,6 @@
 }
 
 .body {
-  /* Canvas */
   position: absolute;
   width: 940px;
   height: 1329.85px;
@@ -31,7 +30,6 @@
 }
 
 .block-wrapper {
-  /* Group 233 */
   position: absolute;
   width: 480px;
   height: 162px;
@@ -40,25 +38,17 @@
 }
 
 .header {
-  /* Group 232 */
   position: absolute;
   width: 450px;
   height: 36px;
   left: 16px;
-  /* left: 75px; */
-  /* top: 255px; */
-
   z-index: 1;
 }
 
 .header-title {
-  /* EXPERIENCE */
   position: absolute;
-  /* width: 173px; */
   height: 33px;
   left: 16px;
-  /* left: 75px; */
-  /* top: 255px; */
 
   font-family: Rubik;
   font-style: normal;
@@ -85,14 +75,11 @@
 }
 
 .header-rect {
-  /* Rectangle 239 */
   position: absolute;
   width: 450px;
   height: 3px;
   left: 16px;
   top: 33px;
-  /* left: 75px; */
-  /* top: 288px; */
 
   /* Enhancv Headings */
   background: #2D3639;
@@ -107,7 +94,6 @@
 }
 
 .content {
-  /* Frame 234 */
   /* Auto Layout */
   display: flex;
   flex-direction: column;
@@ -122,15 +108,11 @@
   left: 1px;
   top: 37px;
   left: 17px;
-  /* left: 59px; */
-  /* top: 291px; */
 
-  /* background: #FFFFFF; */
   border-radius: 8px;
 }
 
 .content-inner {
-  /* Frame 231 */
   /* Auto Layout */
   display: flex;
   flex-direction: column;
@@ -143,8 +125,6 @@
   left: 15px;
   top: 15px;
 
-  /* opacity: 0.5; */
-
   /* Inside Auto Layout */
   flex: none;
   order: 0;
@@ -154,9 +134,8 @@
 }
 
 .content-title {
-  /* Title */
   position: static;
-  /* width: 45px; */
+  width: 450px;
   height: 26px;
   left: 0px;
   top: 0px;
@@ -176,11 +155,9 @@
   order: 0;
   align-self: flex-start;
   flex-grow: 0;
-  /* margin: 4px 0px 4px 0px; */
 }
 
 .content-meta {
-  /* Group 187 */
   position: static;
   width: 196px;
   height: 42px;
@@ -196,7 +173,6 @@
 }
 
 .content-meta-inner {
-  /* Frame 231 */
   /* Auto Layout */
   display: flex;
   flex-direction: column;
@@ -206,14 +182,10 @@
   position: absolute;
   width: 196px;
   height: 42px;
-  /* left: 0px;
-  top: 30px; */
 }
 
 .content-meta-title {
-  /* Company Name */
   position: static;
-  /* width: 121px; */
   height: 22px;
   left: 0px;
   top: 0px;
@@ -238,7 +210,6 @@
 
 .location-period-wrapper {
   /* Frame 231 */
-  /* Auto Layout */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -259,7 +230,6 @@
 }
 
 .period-wrapper {
-  /* Editor/Resume/Components/Stamps/Half */
   /* Auto Layout */
   display: flex;
   flex-direction: row;
@@ -281,7 +251,6 @@
 }
 
 .period-span {
-  /* Date period */
   position: static;
   width: 67px;
   height: 20px;
@@ -323,29 +292,19 @@
 }
 
 .period-vector-inner-wrapper {
-  /* Group */
   position: absolute;
-  /* left: 10%;
-  right: 10%;
-  top: 10%;
-  bottom: 10%; */
 }
 
 .period-vector {
-  /* Vector */
   position: absolute;
   left: 10%;
   right: 10%;
   top: 10%;
   bottom: 10%;
   padding-left: 1px;
-
-  /* Enhancv Context Info */
-  /* background: #3F9CDC; */
 }
 
 .location-wrapper {
-  /* Editor/Resume/Components/Stamps/Half */
   /* Auto Layout */
   display: flex;
   flex-direction: row;
@@ -367,9 +326,7 @@
 }
 
 .location-name {
-  /* New York, NY */
   position: static;
-  /* width: 79px; */
   height: 20px;
   left: 20px;
   top: 0px;
@@ -393,7 +350,6 @@
 }
 
 .location-vector-wrapper {
-  /* Icons/Line/Location */
   position: static;
   width: 14px;
   height: 14px;
@@ -409,48 +365,30 @@
 }
 
 .location-vector-inner-wrapper {
-  /* Group */
   position: absolute;
   left: 31.3%;
   right: 23.75%;
   top: 42%;
   bottom: 0%;
-  /* left: 23.75%;
-  right: 23.75%;
-  top: 15%;
-  bottom: 15%; */
 }
 
 .location-pin-vector {
-  /* Vector */
   position: absolute;
   left: 42.84%;
   right: 42.84%;
   top: 34.31%;
   bottom: 51.21%;
-
-  /* Enhancv Context Info */
-  /* border: 2px solid #3F9CDC; */
 }
 
 .location-circle-vector {
-  /* Vector */
   position: absolute;
   left: 44.7%;
   right: 23.75%;
   top: 41%;
   bottom: 15%;
-  /* left: 23.75%;
-  right: 23.75%;
-  top: 15%;
-  bottom: 15%; */
-
-  /* Enhancv Context Info */
-  /* border: 2px solid #3F9CDC; */
 }
 
 .content-description-wrapper {
-  /* Frame 188 */
   /* Auto Layout */
   display: flex;
   flex-direction: column;
@@ -458,19 +396,14 @@
   padding: 0px;
 
   position: relative;
-  /* position: static; */
   width: 450px;
   height: 20px;
-  /* left: 0px;
-  top: 0px; */
-  /* top: 76px; */
 
   /* Inside Auto Layout */
   flex: none;
   order: 2;
   align-self: center;
   flex-grow: 0;
-  /* margin: 0px 4px; */
 }
 
 .hidden-text {
@@ -488,7 +421,6 @@
 .highlighted-text {
   padding-top: 2px;
   padding-bottom: 2px;
-  /* background-color: rgba(235, 87, 87, 0.33); */
   background-color: transparent;
   color: transparent;
 }
@@ -510,13 +442,9 @@
 }
 
 .content-description-title {
-  /* Company Description */
   position: relative;
-  /* position: static; */
   width: 100%;
   height: 20px;
-  /* left: 0px;
-  top: 0px; */
 
   font-family: Inter-Medium;
   font-style: normal;
@@ -524,7 +452,6 @@
   font-size: 13px;
   line-height: 20px;
   /* identical to box height, or 154% */
-
 
   /* Enhancv Paragraphs */
   color: #384347;
@@ -534,7 +461,6 @@
   order: 0;
   align-self: flex-start;
   flex-grow: 0;
-  /* margin: 0px 4px; */
 }
 
 .content-description-title-top {
@@ -561,13 +487,11 @@
 }
 
 .delete-btn-wrapper {
-  /* Group 11 */
   position: static;
   width: 40px;
   height: 38px;
   left: 123px;
   top: 0px;
-
 
   /* Inside Auto Layout */
   flex: none;
@@ -582,7 +506,6 @@
 }
 
 .delete-btn-rect {
-  /* Rectangle 2 */
   position: absolute;
   width: 40px;
   height: 38px;
@@ -590,12 +513,10 @@
   top: 0px;
 
   background: #FFFFFF;
-  /* border-radius: 0px; */
   border-radius: 0px 18px 18px 0px;
 }
 
 .delete-btn-icon {
-  /* Icons/Line/Trash */
   position: absolute;
   left: 82.21%;
   right: 6.75%;
@@ -604,7 +525,6 @@
 }
 
 .add-btn-wrapper {
-  /* Frame 6 */
   /* Auto Layout */
   display: flex;
   flex-direction: column;
@@ -623,9 +543,7 @@
   /* Inside Auto Layout */
   flex: none;
   order: 0;
-  /* align-self: center; */
   flex-grow: 0;
-  /* margin: 1px 0px; */
 }
 
 .add-btn-wrapper:hover {
@@ -633,7 +551,6 @@
 }
 
 .add-btn-inner-wrapper {
-  /* Frame 217 */
   /* Auto Layout */
   display: flex;
   flex-direction: row;
@@ -655,7 +572,6 @@
 }
 
 .add-btn-text {
-  /* New entry */
   position: static;
   width: 74px;
   height: 18px;
@@ -679,7 +595,6 @@
 }
 
 .add-btn-icon-wrapper {
-  /* Frame 217 */
   /* Auto Layout */
   display: flex;
   flex-direction: row;
@@ -717,21 +632,16 @@
 }
 
 .suggestion-popup-wrapper {
-  /* Overlay/Calendar/Interview/Timeframe */
   position: absolute;
   width: 290px;
   height: 161px;
-  /* left: 1px; */
   left: 1px;
-  /* top: 19px; */
   top: 30px;
-  /* margin-top: 2px; */
   filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.2));
   z-index:11;
 }
 
 .suggestion-popup-overlay {
-  /* Frame 188 */
   /* Auto Layout */
   display: flex;
   flex-direction: column;
@@ -741,7 +651,6 @@
   position: absolute;
   width: 290px;
   height: 156px;
-  /* height: 160px; */
   left: 0px;
   top: 0px;
 
@@ -750,9 +659,7 @@
 }
 
 .suggestion-popup-content {
-  /* Overlay/Button */
   /* Auto Layout */
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -767,7 +674,6 @@
   background: #FFFFFF;
 
   /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   align-self: center;
@@ -776,9 +682,7 @@
 }
 
 .suggestion-popup-inner-content {
-  /* Frame 188 */
   /* Auto Layout */
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -790,9 +694,7 @@
   left: 16px;
   top: 12px;
 
-
   /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   align-self: center;
@@ -812,17 +714,14 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 20px;
-  /* or 167% */
 
   display: flex;
   align-items: center;
 
   /* Dark Text */
-
   color: #232528;
 
   /* Inside Auto Layout */
-
   flex: none;
   order: 1;
   align-self: center;
@@ -831,7 +730,6 @@
 }
 
 .suggestion-popup-inner-top {
-  /* Group 235 */
   position: static;
   width: 258px;
   height: 20px;
@@ -847,7 +745,6 @@
 }
 
 .popup-top-right-wrapper {
-  /* Form/Grid/Checkbox */
   /* Auto Layout */
   display: flex;
   flex-direction: column;
@@ -862,7 +759,6 @@
 }
 
 .popup-top-right {
-  /* Frame 165 */
   /* Auto Layout */
   display: flex;
   flex-direction: row;
@@ -884,7 +780,6 @@
 }
 
 .popup-top-right-text {
-  /* Checkbox text */
   position: static;
   width: 36px;
   height: 20px;
@@ -913,7 +808,6 @@
 }
 
 .checkbox-wrapper {
-  /* Form/Checkbox/Unchecked */
   position: static;
   width: 16px;
   height: 16px;
@@ -929,7 +823,6 @@
 }
 
 .checkbox {
-  /* Rectangle 11 */
   position: absolute;
   left: 4px;
   right: 0%;
@@ -939,14 +832,12 @@
   height: 16px;
 
   background: #FFFFFF;
-  /* Gray 4 */
   border: 1px solid #BDBDBD;
   box-sizing: border-box;
   border-radius: 3px;
 }
 
 .popup-top-left-wrapper {
-  /* Frame 235 */
   /* Auto Layout */
   display: flex;
   flex-direction: row;
@@ -961,7 +852,6 @@
 }
 
 .popup-top-left-text {
-  /* Content Improvement */
   position: static;
   width: 129px;
   height: 20px;
@@ -987,11 +877,9 @@
   align-self: center;
   flex-grow: 0;
   margin: 6px 0px 8px 8px;
-  /* margin: 8px 0px; */
 }
 
 .popup-top-left-icon-wrapper {
-  /* Icons/Filled/List-Bullet */
   position: static;
   width: 16px;
   height: 16px;
@@ -1019,7 +907,6 @@
 }
 
 .square {
-  /* Top-left */
   position: absolute;
   width: 26px;
   height: 26px;
