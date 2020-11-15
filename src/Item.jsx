@@ -3,11 +3,9 @@ import ContentEditable from "react-contenteditable";
 
 import OutsideAlerter from "./OutsideAlerter";
 import { ItemDescription } from "./ItemDescription";
+import { ItemLocation } from "./ItemLocation";
+import { ItemPeriod } from "./ItemPeriod";
 import { PopUpButton } from './PopUpButton';
-
-import calendarVector from './vectors/calendar.svg';
-import locationPinVector from './vectors/pin.svg';
-import locationCircleVector from './vectors/circle.svg';
 
 export const Item = ({ itemData, onItemClicked, addNewItem, deleteItem }) => {
   const [itemFocused, setItemFocused] = useState(false)
@@ -50,35 +48,17 @@ export const Item = ({ itemData, onItemClicked, addNewItem, deleteItem }) => {
           <div className='content-meta'>
             <div className='content-meta-inner'>
               <div className='location-period-wrapper'>
-                <div className='period-wrapper'>
-                  <div className='period-vector-wrapper'>
-                    <div className='period-vector-inner-wrapper'>
-                      <img className='period-vector' src={calendarVector} alt='calendar picker icon' />
-                    </div>
-                  </div>
-                  <ContentEditable
-                  className='period-span no-focus'
-                  html={ itemData.period }
-                  disabled={ false }
+                <ItemPeriod
+                  period={ itemData.period }
                   onChange={ handlePeriodChange }
-                  />
-                </div>
+                />
 
-                <div className='location-wrapper'>
-                  <div className='location-vector-wrapper'>
-                    <div className='location-vector-inner-wrapper'>
-                      <img className='location-pin-vector' src={locationPinVector} alt='location icon' />
-                      <img className='location-circle-vector' src={locationCircleVector} alt='location icon' />
-                    </div>
-                  </div>
-                  <ContentEditable
-                  className='location-name no-focus'
-                  html={ itemData.location }
-                  disabled={ false }
+                <ItemLocation
+                  location={ itemData.location }
                   onChange={ handleLocationChange }
-                  />
-                </div>
+                />
               </div>
+
               <ContentEditable
               className='content-meta-title no-focus'
               html={ itemData.name }
@@ -87,6 +67,7 @@ export const Item = ({ itemData, onItemClicked, addNewItem, deleteItem }) => {
             />
             </div>
           </div>
+
           <ItemDescription
             itemDescription={ itemData.description }
             onChange={ handleDescriptionChange }
